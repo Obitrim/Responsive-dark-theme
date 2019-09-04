@@ -1,0 +1,185 @@
+
+
+/* general navigation customization */
+.nav ul li{
+    list-style-type: none;
+    
+}
+
+.nav-main {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background: rgba(0, 0, 0);
+
+    padding: 50px;
+    overflow-y: auto;
+    text-align: center;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: -100%;
+    left: 0;
+
+    z-index: 10;
+}
+
+
+.slide-up {
+    animation: slide-up 0.3s linear;
+    animation-fill-mode: both;
+}
+
+.slide-down {
+    animation: slide-down 0.3s linear;
+    animation-fill-mode: both;
+}
+
+
+
+
+/* main navigation keyframe animations */
+@keyframes slide-up{
+    from{
+        top: 0;
+    }
+
+    to{
+        top: -100%;
+    }
+}
+
+@keyframes slide-down {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+
+
+
+
+/* menu icon */
+.icon {
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.icon .bar {
+    width: 30px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon .bar::before,
+.icon .bar::after {
+    content: "";
+    background: white;
+    height: 3px;
+    transition: 0.5s;
+    width: 30px;
+
+    position: absolute;
+}
+
+.icon .bar::before {
+    top: -10px;
+}
+
+.icon .bar::after {
+    top: 10px;
+}
+
+
+
+/* toggled class on click on the hamburgar */
+
+.cliked-unclicked .bar {
+    background: rgba(255, 255, 255, 0);
+}
+
+.cliked-unclicked .bar::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.cliked-unclicked .bar::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+
+
+/* bottom navigation */
+
+.nav-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    font-family: sans-serif;
+}
+
+.nav-bottom ul{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+
+.nav-bottom ul li{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    text-align: center;
+    
+    letter-spacing: 1.2px;
+    color: rgb(238, 234, 6);
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-bottom li:first-child.active{
+    border-bottom: 2px dotted rgb(238, 234, 6);
+}
+
+.nav-bottom ul li:hover{
+    cursor: pointer;
+    border-bottom: 2px dotted rgb(238, 234, 6);
+}
+
+@media only screen and (min-width: 768px){
+    .nav-bottom{
+        left: 8%;
+    }
+
+    .nav-bottom ul {
+        justify-content: flex-start;
+        margin-right: 1rem;
+    }
+
+    .nav-bottom ul li {
+        padding: 5px 20px;
+    }
+}
