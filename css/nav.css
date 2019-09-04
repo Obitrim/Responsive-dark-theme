@@ -164,6 +164,7 @@
     display: flex;
     justify-content: space-around;
     overflow-x: auto;
+    padding: 0 1rem;
 }
 
 
@@ -193,13 +194,14 @@
 }
 
 @media only screen and (min-width: 768px){
-    .nav-bottom{
+    .nav-bottom {
         left: 8%;
     }
 
     .nav-bottom ul {
         justify-content: flex-start;
         margin-right: 1rem;
+        padding: 0;
     }
 
     .nav-bottom ul li {
