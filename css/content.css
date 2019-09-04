@@ -1,9 +1,13 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*container*/
 
 .container {
-    margin: 0;
-    padding: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -42,7 +46,7 @@
     position: absolute;
     left: 8%;
     right: 8%;
-    top: 25%;
+    top: 40%;
 
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
@@ -86,7 +90,15 @@
 
 
 .heroImg{
-    display: none;
+    /*display: none;*/
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 
