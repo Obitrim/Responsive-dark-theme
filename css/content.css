@@ -46,7 +46,7 @@
     position: absolute;
     left: 8%;
     right: 8%;
-    top: 40%;
+    top: calc(40% + 3rem);
 
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
@@ -90,7 +90,6 @@
 
 
 .heroImg{
-    /*display: none;*/
     position: absolute;
     top: 10%;
     left: 50%;
@@ -105,17 +104,19 @@
 @media only screen and (min-width: 768px){
     .heroImg{
         display: block;
-        
+
         position: absolute;
-        right: -3%;
-        bottom: 10%;
+        left: calc(100% - 300px);
+        bottom: 5rem;
         height: 70%;
         width: auto;
+        transform: translateX(0);
     }
 
     .message {
         text-align: left;
         width: 60%;
+         top: 25%;
     }
 
     .message h2 {
