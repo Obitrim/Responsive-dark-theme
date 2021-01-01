@@ -24,6 +24,15 @@
     z-index: 10;
 }
 
+.nav-main::-webkit-scrollbar {
+    width: 10px;
+}
+
+.nav-main::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5em;
+}
+
 .nav-side {
     color: #fff;
     text-align: left;
