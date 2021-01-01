@@ -2,6 +2,10 @@
 
 This landing page is responsive and built for practice only and not for commercial purpose.
 
+## Live Preview
+
+[live preview](https://obitrim.github.io/Responsive-dark-theme/)
+
 ![Responsive Dark Theme](https://github.com/Obitrim/Responsive-dark-theme/blob/master/docs/responsive-dark-theme.png)
 
 ## How to use
